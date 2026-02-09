@@ -3,63 +3,97 @@
 <html>
 
 <head>
+	<style>
+		table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        .middle {
+            margin: auto;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+            height: 20px;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 20px;
+        }
+	</style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<table border="1" width="100%">
+	<h2 class="center">HTML Assignment #3</h2>
+
+<!-- TABLE 1 -->
+<table id="table-1" class="middle">
     <tr>
-        <td>left</td>
-        <td align="center">center</td>
-        <td align="right">right</td>
+        <td id="t11">left</td>
+        <td id="t12" class="center">center</td>
+        <td id="t13" class="right">right</td>
     </tr>
     <tr>
         <td>left</td>
-        <td align="center">center</td>
-        <td align="right">right</td>
+        <td class="center">center</td>
+        <td class="right">right</td>
     </tr>
     <tr>
         <td>left</td>
-        <td align="center">center</td>
-        <td align="right">right</td>
+        <td class="center">center</td>
+        <td class="right">right</td>
     </tr>
 </table>
 
 <br><br>
 
-<table border="1" width="100%" height="150">
+<!-- TABLE 2 -->
+<table id="table-2" class="middle">
     <tr>
-        <td rowspan="3" width="20%"></td>
-        <td width="20%"></td>
-        <td width="20%"></td>
-        <td width="20%"></td>
-        <td rowspan="3" width="20%"></td>
+        <td id="t21" colspan="6"></td>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<br><br>
+
+<!-- TABLE 3 -->
+<table id="table-3" class="middle">
+    <tr class="green">
+        <td colspan="3"></td>
     </tr>
     <tr>
         <td></td>
-        <td colspan="2"></td>
-    </tr>
-    <tr>
-        <td colspan="3"></td>
-    </tr>
-</table>
-
-<br><br>
-
-<table border="1" width="100%">
-    <tr>
-        <td colspan="3" bgcolor="green" height="20"></td>
-    </tr>
-    <tr>
-        <td width="30%"></td>
-        <td align="center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Steph_Curry_%2851915116957%29.jpg/500px-Steph_Curry_%2851915116957%29.jpg" width="250">
+        <td id="t-image" class="center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Michael_Jordan_dunk.jpg" width="200">
         </td>
-        <td width="30%"></td>
+        <td></td>
     </tr>
-    <tr>
-        <td colspan="3" bgcolor="blue" height="20"></td>
+    <tr class="blue">
+        <td colspan="3"></td>
     </tr>
 </table>
     <script type="text/javascript" src="./script.js">
